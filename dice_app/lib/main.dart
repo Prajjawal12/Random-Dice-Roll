@@ -3,10 +3,15 @@ import 'package:dice_app/gradient_container.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(
+          const [
+            Color.fromARGB(255, 3, 108, 98),
+            Color.fromARGB(255, 8, 187, 169)
+          ],
+        ),
       ),
     ),
   );
